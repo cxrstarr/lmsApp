@@ -27,7 +27,7 @@ if (isset($_POST['update_genre'])) {
         Swal.fire({
           icon: 'success',
           title: 'Update Successful',
-          text: 'Your account has been updated successfully!',
+          text: 'Genre has been updated successfully!',
           confirmButtonText: 'OK'
         }).then((result) => {
           if (result.isConfirmed) {

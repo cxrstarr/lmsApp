@@ -1,6 +1,6 @@
 <?php
-
 session_start();
+
 require_once('classes/database.php');
 
 $con = new database();
@@ -9,6 +9,9 @@ $con = new database();
       header('Location: index.php');
       exit;
   }
+
+  $sweetAlertConfig = "";
+
 ?>
 
 <!doctype html>
@@ -26,7 +29,7 @@ $con = new database();
           <a class="navbar-brand" href="#">Library Management System (Admin)</a>
           <a class="btn btn-outline-light ms-auto" href="add_authors.php">Add Authors</a>
           <a class="btn btn-outline-light ms-2" href="add_genres.php">Add Genres</a>
-          <a class="btn btn-outline-light ms-2" href="add_books.html">Add Books</a>
+          <a class="btn btn-outline-light ms-2" href="add_books.php">Add Books</a>
           <div class="d-flex ms-auto">
       <a href="logout.php" class="btn btn-outline-light">Logout</a>
     </div>
